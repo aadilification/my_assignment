@@ -120,6 +120,7 @@ class AirplaneTicket(Document):
         seat_letter = random.choice(["A", "B", "C", "D", "E", "F"])
         return f"{row}{seat_letter}"
     # to validate add-ons
+    # add-ons must be unique
     def validate_add_ons(self):
         seen = set()
         for add_on in self.add_ons:
