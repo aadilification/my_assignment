@@ -1,0 +1,21 @@
+{% set color = frappe.form_dict.get('color') or 'black' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Show Me Colors</title>
+    <style>
+    html, body { height: 100%; margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; }
+    .wrap { display: grid; place-items: right; height: 100%; padding: 16px; box-sizing: border-box; }
+    .rect { width: min(800px, 100%); height: 300px; border-radius: 8px; }
+    .note { margin-top: 12px; color: #555; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <main class="wrap">
+        <div class="rect" style="background: {{ color }}" role="img" aria-label="Color preview rectangle"></div>
+        <div class="note">Resolved color: <code>{{ color }}</code></div>
+    </main>
+</body>
+</html>
