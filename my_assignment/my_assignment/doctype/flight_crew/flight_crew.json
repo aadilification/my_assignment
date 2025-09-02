@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-29 15:34:28.450861",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "crew_members",
+  "roles",
+  "column_break_jubg",
+  "duty_start",
+  "duty_end"
+ ],
+ "fields": [
+  {
+   "fieldname": "crew_members",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Crew Members",
+   "link_filters": "[[\"Crew Members\",\"active\",\"=\",1]]",
+   "options": "Crew Members",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "crew_members.role",
+   "fieldname": "roles",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Roles",
+   "read_only": 1
+  },
+  {
+   "fieldname": "duty_start",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Duty Start"
+  },
+  {
+   "fieldname": "column_break_jubg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "duty_end",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Duty End"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-08-29 17:06:57.517823",
+ "modified_by": "Administrator",
+ "module": "my_assignment",
+ "name": "Flight Crew",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

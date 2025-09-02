@@ -19,7 +19,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-16 17:16:18.330551",
+ "modified": "2025-08-26 18:02:51.953199",
  "modified_by": "Administrator",
  "module": "my_assignment",
  "name": "Add-on Type",
@@ -37,6 +37,30 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "Airport Authority Personnel",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "Fleet Manager",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "role": "Flight Crew Member",
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "Travel Agent"
   }
  ],
  "row_format": "Dynamic",
