@@ -9,7 +9,12 @@
   "code",
   "column_break_ozna",
   "city",
-  "country"
+  "country",
+  "shops_details_section",
+  "available_shops",
+  "total_shops",
+  "column_break_sdkd",
+  "occupied_shops"
  ],
  "fields": [
   {
@@ -36,12 +41,36 @@
    "in_list_view": 1,
    "label": "Country",
    "reqd": 1
+  },
+  {
+   "fieldname": "shops_details_section",
+   "fieldtype": "Section Break",
+   "label": "Shops Details"
+  },
+  {
+   "fieldname": "available_shops",
+   "fieldtype": "Int",
+   "label": "Available Shops"
+  },
+  {
+   "fieldname": "total_shops",
+   "fieldtype": "Int",
+   "label": "Total Shops"
+  },
+  {
+   "fieldname": "column_break_sdkd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "occupied_shops",
+   "fieldtype": "Int",
+   "label": "Occupied Shops"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-12 15:51:59.999358",
+ "modified": "2025-08-30 20:27:46.246512",
  "modified_by": "Administrator",
  "module": "my_assignment",
  "name": "Airport",
@@ -59,6 +88,25 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "Airport Authority Personnel",
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "Flight Crew Member"
+  },
+  {
+   "read": 1,
+   "role": "Travel Agent"
+  },
+  {
+   "read": 1,
+   "role": "Fleet Manager"
   }
  ],
  "row_format": "Dynamic",

@@ -10,9 +10,12 @@
   "section_break_3k14",
   "airplane",
   "is_published",
+  "gate_number",
   "column_break_jamo",
   "status",
   "route",
+  "section_break_rgvt",
+  "crew",
   "airport_details_section",
   "source_airport",
   "source_airport_code",
@@ -136,6 +139,23 @@
    "fieldtype": "Data",
    "label": "Route",
    "no_copy": 1
+  },
+  {
+   "fieldname": "section_break_rgvt",
+   "fieldtype": "Section Break",
+   "label": "Crew Member Details"
+  },
+  {
+   "fieldname": "crew",
+   "fieldtype": "Table",
+   "label": "Crew",
+   "options": "Flight Crew"
+  },
+  {
+   "fieldname": "gate_number",
+   "fieldtype": "Select",
+   "label": "Gate Number",
+   "options": "G01\nG02\nG03\nG04\nG05\nG06\nG07\nG08\nG09"
   }
  ],
  "grid_page_length": 50,
@@ -144,7 +164,7 @@
  "is_published_field": "is_published",
  "is_submittable": 1,
  "links": [],
- "modified": "2025-08-15 16:31:41.532500",
+ "modified": "2025-08-29 17:40:00.018536",
  "modified_by": "Administrator",
  "module": "my_assignment",
  "name": "Airplane Flight",
@@ -163,6 +183,28 @@
    "share": 1,
    "submit": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "Airport Authority Personnel",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "Fleet Manager",
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "Flight Crew Member"
+  },
+  {
+   "read": 1,
+   "role": "Travel Agent"
   }
  ],
  "route": "Flight",

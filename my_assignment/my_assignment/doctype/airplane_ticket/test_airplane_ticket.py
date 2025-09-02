@@ -7,3 +7,4 @@ from frappe.tests.utils import FrappeTestCase
 
 class TestAirplaneTicket(FrappeTestCase):
 	pass
+

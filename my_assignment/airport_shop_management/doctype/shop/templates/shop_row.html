@@ -1,0 +1,9 @@
+<div style="border: 3px solid #ccc; padding: 5px; margin: 5px;border-radius:15px">
+	<h1>{% set d = frappe.get_doc('Shop', doc.shop) %}
+		{{ d.airport }}</h1>
+	<p>➤ Shop Number : {{ doc.shop_number }}</p>
+	<p>➤ Area square feet : {{ doc.area_square__feet }}</p>
+	<p>➤ Status : {{ doc.status }}</p>
+	<a href="{{ doc.route }}" style="color: blue;"> View Shop </a>
+</div>
+<!-- this is a sample default list template -->
